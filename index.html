@@ -89,7 +89,7 @@
             var marker; // Variable to hold the marker on the map
 
             $scope.getGeolocation = function () {
-                $http.post('http://localhost:8080/api/geo/locate', { address: $scope.address, mail: $scope.email })
+                $http.post('https://geolocator-60r2.onrender.com/api/geo/locate', { address: $scope.address, mail: $scope.email })
                     .then(function (response) {
                         var data = response.data.body.data;
                         console.log(response.data.body.data);
